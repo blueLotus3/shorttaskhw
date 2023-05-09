@@ -1,0 +1,19 @@
+{
+    "name": "Short Task Assignment",
+    "short_name": "STA",
+    "lang": "en-US",
+    "id":"/",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "scope":".",
+    "description": "This is my homework for a simple PWA application",
+    "icons": [
+        {
+            "src": "",
+            "sizes": "",
+            "type": ""
+        }
+    ]
+}

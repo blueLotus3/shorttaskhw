@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="manifest.json"> 
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <title>Short Task Hw</title>
+</head>
+
+<body>
+    <header>
+        <h1>well well well </h1>
+    </header>
+    <section>
+
+    </section>
+    <script src="main.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="service-worker.js"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+  registerSW();
+});
+
+// Register the Service Worker
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator
+            .serviceWorker
+            .register('/service-worker.js');
+    }
+    catch (e) {
+      console.log('SW registration failed');
+    }
+  }
+}
+    </script>
+</body>
+</html>
